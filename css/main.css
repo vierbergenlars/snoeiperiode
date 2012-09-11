@@ -1,7 +1,18 @@
-.table tbody tr td.color, .table-hover tbody tr:hover td.color {
+.table tbody tr td.ct-winter, .table-hover tbody tr:hover td.ct-winter {
 	background: #EE5F5B
 }
 
+.table tbody tr td.ct-summer, .table-hover tbody tr:hover td.ct-summer {
+	background: #5BB75B
+}
+
+.table tr th:first-child {
+	width: 50%
+}
 body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+
+#sv_down {
+	display: none;
+}
