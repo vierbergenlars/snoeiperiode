@@ -1,7 +1,10 @@
 var ping = setInterval(function() {
-    T.transport('/ping', function(err) {
+    T.transport('/ping', function(err, data) {
         if (err) {
             $('#sv_down').show();
+            clearInterval(ping);
+        }
+        if(data == 'STOP!') {
             clearInterval(ping);
         }
     });
