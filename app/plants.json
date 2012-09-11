@@ -6,15 +6,27 @@
                 {
                     "name": "Kruisbes",
                     "latin": "Ribes uva-crispa",
-                    "cut": [false, true, true, false, false, false, false, false, false, false, false, false]
+                    "ref": "http://www.houtwal.be/fruitteelt_images/fruitsnoeikalender.pdf",
+                    "cut": [1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1]
                 }, {
                     "name": "Aalbes",
-                    "latin": "Ribes Rubrum (Jonkheer van Tets)",
-                    "cut": [false, false, false, false, false, false, true, false, false, false, false, true]
+                    "latin": "Ribes Rubrum 'Jonkheer van Tets'",
+                    "cut": [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 }, {
                     "name": "Braam",
-                    "latin": "Rubus (Thornless Evergreen)",
-                    "cut": [false, false, true, false, false, false, false, true, true, false, false, false]
+                    "latin": "Rubus 'Thornless Evergreen'",
+                    "ref": "http://www.houtwal.be/fruitteelt_images/fruitsnoeikalender.pdf",
+                    "cut": [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+                }, {
+                    "name": "Framboos",
+                    "latin": "Rubus idaeus",
+                    "ref": "http://www.wilfriedrobert.be/FRUIT/framboos.html",
+                    "cut": [1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+                }, {
+                    "name": "Kiwibes",
+                    "latin": "Actinidia arguta",
+                    "ref": "http://www.houtwal.be/vakartikels/bijzonder_winterhard/kiwiplant_snoei.htm",
+                    "cut": [1, 0, 0, 0, 1, 2, 2, 2, 0, 0, 0, 1]
                 }
             ]
         }, {
@@ -22,9 +34,29 @@
             "plants": [
                 {
                     "name": "Hulst",
-                    "latin": "Ilex meserveae (Blue Prince)",
+                    "latin": "Ilex meserveae 'Blue Prince'",
                     "ref": "http://www.groeninfo.com/plantengids/ilex-x-meserveae-blue-prince.html",
-                    "cut": [false, false, false, false, false, false, false, false, false, false, false, false]
+                    "cut-info": "Snoeien niet nodig."
+                }, {
+                    "name": "Taxus",
+                    "latin": "Taxus baccata",
+                    "ref": "http://www.tuinadvies.be/taxus.htm",
+                    "cut": [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0]
+                }, {
+                    "name": "Wit kornoeltje",
+                    "latin": "Cornus Alba",
+                    "ref": "http://www.groen.net/Article.aspx?id=1219",
+                    "cut": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Sneeuwbal",
+                    "latin": "Viburnum davidii",
+                    "ref": "http://www.groen.net/Article.aspx?id=8052",
+                    "cut": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Hazelaar",
+                    "latin": "Corylus avellana",
+                    "ref": "http://www.neerlandstuin.nl/struiken/hazelnoot.html",
+                    "cut": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
                 }
             ]
         }, {
@@ -34,20 +66,57 @@
                     "name": "Clematis",
                     "latin": "Clematis Montana 'Grandiflora'",
                     "ref": "http://www.clematis.be/clesnoeitips.html",
-                    "cut": [false, false, false, false, false, false, false, false, false, false, false, false]
+                    "cut": [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Japanse kamperfoelie",
+                    "latin": "Lonicera Japonica 'hall's prolific'",
+                    "ref": "http://www.tuinkrant.com/snoeigids/snoei_lonicera.htm",
+                    "cut": [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
                 }
             ]
         }, {
-            "category": "Bamboe",
+            "category": "Bamboe en grassen",
             "plants": [
                 {
                     "name": "Bamboe",
                     "latin": "Bambusa Phyllostachys Bissetii",
                     "ref": "http://www.tuinkrant.com/artikel/snoeien-bamboe",
-                    "cut": [false, false, false, true, true, false, false, false, false, true, true, true]
+                    "cut": [0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1]
                 }, {
                     "name": "Bamboe",
-                    "latin": "Fargesia 'Rufa'"
+                    "latin": "Fargesia 'Rufa'",
+                    "ref": "http://onlinetuinieren.nl/tuinplanten-beplanting/39/fargesia-bamboe.html",
+                    "cut": [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Australische Lampenpoetser",
+                    "latin": "Pennisetum Alopecuroides",
+                    "ref": "http://www.openbaargroen.be/catalog/index.cfm?fuseaction=DETAIL&id=60",
+                    "cut": [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Sierriet",
+                    "latin": "Miscanthus Sinensis 'Gracillimus'",
+                    "ref": "http://www.openbaargroen.be/catalog/index.cfm?fuseaction=DETAIL&id=209",
+                    "cut": [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+                }
+            ]
+        }, {
+            "category": "Bodembedekkers",
+            "plants": [
+                {
+                    "name": "Kleine maagdenpalm",
+                    "latin": "Vinca minor",
+                    "ref": "http://www.groen.net/Article.aspx?id=8335",
+                    "cut": [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+                }, {
+                    "name": "Vrouwenmantel",
+                    "latin": "Alchemilla mollis",
+                    "ref": "http://plantnu.nl/alchemilla-mollis",
+                    "cut-info": "Na eerste bloei tot vlak boven de grond afknippen."
+                }, {
+                    "name": "Ganzerik",
+                    "latin": "Potentilla tridentata 'Nuuk'",
+                    "ref": "http://www.groeninfo.com/plantengids/potentilla-tridentata-nuuk.html",
+                    "cut": [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
                 }
             ]
         }
