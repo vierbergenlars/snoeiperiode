@@ -1,0 +1,55 @@
+{
+    "plants": [
+        {
+            "category": "Fruitstruik",
+            "plants": [
+                {
+                    "name": "Kruisbes",
+                    "latin": "Ribes uva-crispa",
+                    "cut": [false, true, true, false, false, false, false, false, false, false, false, false]
+                }, {
+                    "name": "Aalbes",
+                    "latin": "Ribes Rubrum (Jonkheer van Tets)",
+                    "cut": [false, false, false, false, false, false, true, false, false, false, false, true]
+                }, {
+                    "name": "Braam",
+                    "latin": "Rubus (Thornless Evergreen)",
+                    "cut": [false, false, true, false, false, false, false, true, true, false, false, false]
+                }
+            ]
+        }, {
+            "category": "Heesters",
+            "plants": [
+                {
+                    "name": "Hulst",
+                    "latin": "Ilex meserveae (Blue Prince)",
+                    "ref": "http://www.groeninfo.com/plantengids/ilex-x-meserveae-blue-prince.html",
+                    "cut": [false, false, false, false, false, false, false, false, false, false, false, false]
+                }
+            ]
+        }, {
+            "category": "Klimplanten",
+            "plants": [
+                {
+                    "name": "Clematis",
+                    "latin": "Clematis Montana 'Grandiflora'",
+                    "ref": "http://www.clematis.be/clesnoeitips.html",
+                    "cut": [false, false, false, false, false, false, false, false, false, false, false, false]
+                }
+            ]
+        }, {
+            "category": "Bamboe",
+            "plants": [
+                {
+                    "name": "Bamboe",
+                    "latin": "Bambusa Phyllostachys Bissetii",
+                    "ref": "http://www.tuinkrant.com/artikel/snoeien-bamboe",
+                    "cut": [false, false, false, true, true, false, false, false, false, true, true, true]
+                }, {
+                    "name": "Bamboe",
+                    "latin": "Fargesia 'Rufa'"
+                }
+            ]
+        }
+    ]
+}
