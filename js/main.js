@@ -1,5 +1,5 @@
 var ping = setInterval(function() {
-    T.transport('/ping', function(err, data) {
+    T.transport('ping', function(err, data) {
         if (err) {
             $('#sv_down').show();
             clearInterval(ping);
