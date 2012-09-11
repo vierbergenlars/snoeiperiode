@@ -4,7 +4,6 @@ if(typeof module != "undefined" && module.exports) {
 }
 T.parser.define('handlebars',['handlebars','hb'],{
     compile: function( template ) {
-        console.log(template);
         return Handlebars.compile( template );
     },
     render: function( compiled, data ) {
