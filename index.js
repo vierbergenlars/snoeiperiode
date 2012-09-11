@@ -13,9 +13,7 @@ var http_server = http.createServer(function(req, resp) {
         clearTimeout(exit_timer);
         exit_timer = setTimeout(function() {
             console.log('Browser timed out, exiting...')
-            http_server.close(function() {
-                process.exit(0);
-            });
+            process.exit(0);
         }, 8000)
         return;
     }
@@ -26,10 +24,9 @@ var http_server = http.createServer(function(req, resp) {
 
 var exit_timer = setTimeout(function() {
     console.log('Browser timed out, exiting...')
-    http_server.close(function() {
-        process.exit(0);
-    });
-}, 60000); //When browser is still starting, wait for 1 min.
+    process.exit(0);
+}, 60000);
+//When browser is still starting, wait for 1 min.
 
 http_server.on('error', function(err) {
     if (err.code == 'EADDRINUSE') {
