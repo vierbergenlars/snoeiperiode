@@ -1,26 +1,26 @@
-setInterval(function() {
-    T.transport('/ping', function() {});
+var ping = setInterval(function() {
+    T.transport('/ping', function(err) {
+        if (err) {
+            $('#sv_down').show();
+            clearInterval(ping);
+        }
+    });
 }, 2000);
 var main = new T('app/main.hb', function() {
     this.update({});
-    var wait = 0;
-    wait++;
-    main.bind(new T('app/nav.hb', function() {
-        this.update('app/plants.json')
+    this.bind(new T('app/nav.hb', function() {
+        this.update('app/plants.json', function() {
+            main.bind(new T('app/contents.hb', function() {
+                this.update('app/plants.json', function() {
+                    main.render(function(err, rendered) {
+                        if(err) {
+                            throw err;
+                        }
+                        $('#content').html(rendered);
+                    })
+                })
+            }));
+        })
     }), 'nav');
-    wait++;
-    main.bind(new T('app/contents.hb', function() {
-        this.update('app/plants.json')
-    }));
-    this.attach('#content');
-
-    this.render(function(err) {
-        console.log('Render called');
-        if (err) {
-            throw err;
-        }
-        this.update();
-    })
 });
-
 
