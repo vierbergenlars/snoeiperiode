@@ -12,3 +12,12 @@ if (!(window.console && console.log)) {
 }
 
 // Place any jQuery/helper plugins in here.
+
+Handlebars.registerHelper("eq", function(var1, var2, options) {
+    if(var1 == var2) {
+        return options.fn(this);
+    }
+    else {
+        return options.inverse(this);
+    }
+})

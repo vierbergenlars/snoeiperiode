@@ -5,15 +5,19 @@
 		<thead><tr><th>Naam</th><th>Jan</th><th>Feb</th><th>Mrt</th><th>Apr</th><th>Mei</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Okt</th><th>Nov</th><th>Dec</th></tr></thead>
 		<tbody>
 		{{#each plants}}
-			<tr><th title="{{latin}}">{{name}} {{#if ref}}<a href="{{ref}}" title="Externe link"><i class="icon-share"></i></a>{{/if}}</th>
+			<tr><th>{{name}} <span class="muted">{{latin}}</span> {{#if ref}}<a href="{{ref}}" title="{{ref}}"><i class="icon-share"></i></a>{{/if}}</th>
 			{{#each cut}}
-				{{#if .}}
-				<td class="color">&nbsp;</td>
+				{{#eq . 1}}
+				<td class="ct-winter">&nbsp;</td>
 				{{else}}
-				<td>&nbsp;</td>
-				{{/if}}
+					{{#eq . 2}}
+					<td class="ct-summer" title="Zomersnoei: scheuten inknijpen">&nbsp;</td>
+					{{else}}
+					<td>&nbsp;</td>
+					{{/eq}}
+				{{/eq}}
 			{{else}}
-			<td colspan="12">?</td>	
+			<td colspan="12">{{#if cut-info}}{{cut-info}}{{else}}?{{/if}}</td>	
 			{{/each}}
 			</tr>
 		{{/each}}
